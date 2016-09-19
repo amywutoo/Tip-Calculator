@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories: Work in Progress http://i.imgur.com/ClaTWFH.gif?1
+Here's a walkthrough of implemented user stories: So far what I have: <a href="http://imgur.com/ClaTWFH"><img src="http://i.imgur.com/ClaTWFH.gif?1" title="source: imgur.com" /></a>
 
 ## Notes
 
