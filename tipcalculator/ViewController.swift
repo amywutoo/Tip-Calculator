@@ -14,12 +14,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var APPViewController: UIImagePickerControllerDelegate!
+    @IBOutlet weak var totalGuests: UILabel!
+    @IBOutlet weak var totalPerGuest: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        totalGuests.text = "0"
+        totalPerGuest.text = "0"
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +33,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onClickCamera(_ sender: UIButton) {
+           }
+    
     @IBAction func onEditingChanged(_ sender: AnyObject) {
         
         let tipPercentages = [0.18, 0.20, 0.25]
@@ -36,6 +44,7 @@ class ViewController: UIViewController {
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
+        let totalPerGuest = total / totalGuests
         
         tipLabel.text = "$\(tip)"
         totalLabel.text = "$\(total)"
