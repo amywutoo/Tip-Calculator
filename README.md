@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories: WIP
+Here's a walkthrough of implemented user stories: Work in Progress http://i.imgur.com/ClaTWFH.gif?1
 
 ## Notes
 
