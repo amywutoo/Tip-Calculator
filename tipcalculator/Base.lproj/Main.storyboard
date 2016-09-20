@@ -159,9 +159,7 @@
                             <outletCollection property="gestureRecognizers" destination="6Lq-da-VpC" appends="YES" id="cUm-kg-GgE"/>
                         </connections>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="v1p-UY-2dq"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="GuestCounter" destination="H57-k8-yQl" id="bL2-H9-suu"/>
