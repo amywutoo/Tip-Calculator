@@ -4,7 +4,7 @@ Split is a tip calculator application for iOS.
 
 Submitted by: Amy Wu
 
-Time spent: 7 hours spent in total
+Time spent: 10 hours spent in total
 
 ## User Stories
 
@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories: So far what I have: 
+Here's a walkthrough so far:
 ![Split](tipcalculator.gif)
 
 ## Notes
