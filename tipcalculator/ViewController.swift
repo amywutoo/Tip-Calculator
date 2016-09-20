@@ -8,34 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var GuestCounter: UIStepper!
+    @IBOutlet weak var TotalGuests: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
-    @IBOutlet weak var APPViewController: UIImagePickerControllerDelegate!
-    @IBOutlet weak var totalGuests: UILabel!
-    @IBOutlet weak var totalPerGuest: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
-        totalGuests.text = "0"
-        totalPerGuest.text = "0"
+        
     }
 
+    @IBAction func TakeReceiptPic(_ sender: UIButton) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.camera
+        image.allowsEditing = false
+        self.present(image, animated: true, completion: nil)
+    }
+    
+    @IBAction func countTotalGuests(_ sender: UIStepper) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-    @IBAction func onClickCamera(_ sender: UIButton) {
-           }
     
+
     @IBAction func onEditingChanged(_ sender: AnyObject) {
         
         let tipPercentages = [0.18, 0.20, 0.25]
@@ -44,7 +51,6 @@ class ViewController: UIViewController {
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
-        let totalPerGuest = total / totalGuests
         
         tipLabel.text = "$\(tip)"
         totalLabel.text = "$\(total)"

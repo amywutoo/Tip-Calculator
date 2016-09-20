@@ -114,47 +114,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sCE-rX-BXP">
-                                <frame key="frameInset" minX="162" minY="472" width="39" height="89"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y0T-Pf-XCK">
+                                <frame key="frameInset" minX="40" minY="606" width="71" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="65"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total per guest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y7e-gg-BPU">
-                                <frame key="frameInset" minX="42" minY="585" width="107" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total per Guest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DIz-bB-bK2">
+                                <frame key="frameInset" minX="40" minY="587" width="117" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8tu-JL-fbZ">
-                                <frame key="frameInset" minX="157" minY="198" width="51" height="26"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="H57-k8-yQl">
+                                <frame key="frameInset" minX="74" minY="488" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="CameraIcon"/>
                                 <connections>
-                                    <action selector="onClickCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tFo-0G-xuS"/>
+                                    <action selector="GuestCounter:" destination="BYZ-38-t0r" eventType="valueChanged" id="sOc-0t-Te3"/>
+                                    <action selector="countTotalGuests:" destination="BYZ-38-t0r" eventType="valueChanged" id="JHt-wc-Zei"/>
+                                    <action selector="viewGuestCounter:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gdn-wv-IGN"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yyP-qz-B1H">
-                                <frame key="frameInset" minX="209" minY="501" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="50"/>
-                                <state key="normal" title="+"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cZE-Yl-gQl">
-                                <frame key="frameInset" minX="118" minY="472" width="30" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="50"/>
-                                <state key="normal" title="–"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$50.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SH8-fb-kbI">
-                                <frame key="frameInset" minX="40" minY="606" width="92" height="41"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K6s-Ux-u4Q">
+                                <frame key="frameInset" minX="284" minY="482" width="17" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ps0-UE-Ty3">
+                                <frame key="frameInset" minX="165" minY="197" width="34" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CameraIcon"/>
+                                <connections>
+                                    <action selector="TakeReceiptPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTY-Dy-ano"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -162,13 +159,18 @@
                             <outletCollection property="gestureRecognizers" destination="6Lq-da-VpC" appends="YES" id="cUm-kg-GgE"/>
                         </connections>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="v1p-UY-2dq"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="GuestCounter" destination="H57-k8-yQl" id="bL2-H9-suu"/>
+                        <outlet property="TotalGuests" destination="K6s-Ux-u4Q" id="IeV-S6-bqA"/>
                         <outlet property="billField" destination="UCy-3t-k1v" id="1SD-9B-ApO"/>
                         <outlet property="tipControl" destination="OfH-k1-1tP" id="EDV-vZ-fgw"/>
                         <outlet property="tipLabel" destination="Tvt-HK-DJs" id="Wog-vg-f5m"/>
-                        <outlet property="totalGuests" destination="sCE-rX-BXP" id="aio-lV-OHr"/>
+                        <outlet property="totalGuests" destination="K6s-Ux-u4Q" id="nUa-mg-1oh"/>
                         <outlet property="totalLabel" destination="Cdn-LN-Ucj" id="u1k-qb-LLf"/>
-                        <outlet property="totalPerGuest" destination="SH8-fb-kbI" id="bAO-fQ-Ixa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
