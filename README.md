@@ -30,7 +30,10 @@ Here's a walkthrough of implemented user stories: So far what I have:
 
 ## Notes
 
-Still trying to get additional features to work
+Still trying to get additional features to work:
+Using the phone's camera to take a picture of the receipt
+Adding UIStepper for # of guests
+Total amount owed (per guest)
 
 ## License
 
