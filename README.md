@@ -24,6 +24,7 @@ The following **additional** features are implemented:
 - [ ] on click phone camera launch to take photo of receipt
 
 ## Video Walkthrough 
+First try: http://i.imgur.com/ClaTWFH.gif?1
 ![Split](tipcalculator.gif)
 
 ## Notes
