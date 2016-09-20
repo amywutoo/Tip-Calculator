@@ -24,12 +24,9 @@ The following **additional** features are implemented:
 - [ ] on click phone camera launch to take photo of receipt
 
 ## Video Walkthrough 
-
-Here's a walkthrough so far:
 ![Split](tipcalculator.gif)
 
 ## Notes
-
 Still trying to get additional features to work:
 Using the phone's camera to take a picture of the receipt
 Adding UIStepper for # of guests
