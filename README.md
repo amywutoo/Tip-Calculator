@@ -25,6 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 ![Split](tipcalculator.gif)
+
 v1: http://i.imgur.com/ClaTWFH.gif?1
 
 ## Notes
